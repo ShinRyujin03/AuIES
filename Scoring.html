@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="AutoES Logo">
+            </div>
+            <nav>
+                <button>Doing Test</button>
+                <button>Topic</button>
+                <button>Samples</button>
+            </nav>
+        </header>
+        <main>
+            <div class="input-section">
+                <textarea class="question" placeholder="Enter or paste question"></textarea>
+                <textarea class="essay" placeholder="Enter or paste essay"></textarea>
+                <div class="word-count">0 paragraphs 0 words</div>
+            </div>
+            <div class="sidebar">
+                <button class="check-essay">Check essay</button>
+                <button class="timer" id="timerButton">Time: 40 min</button>
+                <div class="criteria">
+                    <div class="criterion">
+                        <h3>COHERENCE AND COHESION</h3>
+                        <ul>
+                            <li>Logical structure</li>
+                            <li>Accurate linking words</li>
+                            <li>Variety in linking words</li>
+                        </ul>
+                    </div>
+                    <div class="criterion">
+                        <h3>LEXICAL RESOURCE</h3>
+                        <ul>
+                            <li>Varied vocabulary</li>
+                            <li>Accurate spelling & word formation</li>
+                        </ul>
+                    </div>
+                    <div class="criterion">
+                        <h3>GRAMMATICAL RANGE</h3>
+                        <ul>
+                            <li>Mix of complex & simple sentences</li>
+                            <li>Clear and correct grammar</li>
+                        </ul>
+                    </div>
+                    <div class="criterion">
+                        <h3>TASK ACHIEVEMENT</h3>
+                        <ul>
+                            <li>Complete response</li>
+                            <li>Appropriate word count</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
