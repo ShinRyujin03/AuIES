@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Essay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="#">Doing Test</a>
+            <a href="#">Topic</a>
+            <a href="#">Samples</a>
+        </nav>
+        <div class="icons">
+            <button class="icon-button">&#36;</button>
+            <button class="icon-button">&#128100;</button>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button class="search-button">&#128269;</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="left-column">
+                <div class="input-box">
+                    <input type="text" placeholder="Enter or paste question">
+                    <button>Get a random question</button>
+                </div>
+                <textarea placeholder="Enter or paste essay"></textarea>
+                <div class="upload-container">
+                    <input type="file" id="fileInput" accept=".txt,.doc,.docx" hidden>
+                    <label for="fileInput" class="upload-button">Upload File</label>
+                </div>
+                <div class="word-count">0 paragraphs 0 words</div>
+            </div>
+            <div class="right-column">
+                <button class="check-essay-button">Check essay</button>
+                <button class="timer" id="timerButton">Time: 40 min</button>
+                <div class="criteria-section">
+                    <h2>COHERENCE AND COHESION</h2>
+                    <ul>
+                        <li>Logical structure</li>
+                        <li>Accurate linking words</li>
+                        <li>Variety in linking words</li>
+                    </ul>
+                    <h2>LEXICAL RESOURCE</h2>
+                    <ul>
+                        <li>Varied vocabulary</li>
+                        <li>Accurate spelling & word formation</li>
+                    </ul>
+                    <h2>GRAMMATICAL RANGE</h2>
+                    <ul>
+                        <li>Mix of complex & simple sentences</li>
+                        <li>Clear and correct grammar</li>
+                    </ul>
+                    <h2>TASK ACHIEVEMENT</h2>
+                    <ul>
+                        <li>Complete response</li>
+                        <li>Appropriate word count</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

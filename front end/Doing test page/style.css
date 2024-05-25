@@ -1,0 +1,249 @@
+/* style.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6; /* Khoảng cách dòng tốt hơn */
+    margin: 0;
+    padding: 0;
+    background-color: #AABEF1; /* Màu nền nhạt */
+}
+
+header {
+    background-color: #6A8FF9; /* Màu xanh dương */
+    color: white;
+    padding: 0rem;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: auto;
+    height: 50px; /* Điều chỉnh chiều cao theo kích thước logo của bạn */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Căn giữa các nút */
+    align-items: center ;
+    flex-grow: 1; /* Cho phép nav chiếm hết không gian còn lại */
+    margin: 0 auto; /* Tạo khoảng cách với logo và các biểu tượng */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background-color: #5E61C0; /* Màu xanh đậm */
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #0047AB; /* Màu xanh đậm hơn khi hover */
+}
+
+.icons span {
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+    flex: 2;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button { /* Get a rand question*/
+    background-color: #4CAF50; /* Màu xanh lá cây */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #228B22;
+    transform: scale(1.05); /* Phóng to biểu tượng khi hover */
+}
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: sans-serif; /* Hoặc serif nếu bạn muốn font có chân */
+}
+
+.word-count {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.right-column {
+    flex: 1;
+}
+
+.check-essay-button {
+    background-color: #5E61C0; /* Màu xanh dương */
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.check-essay-button:hover {
+    background-color: #0047AB; /* Màu xanh đậm hơn khi hover */
+}
+
+/* ... (các phần CSS khác) ... */
+
+.timer {
+    background-color: #5E61C0; /* Màu xanh nhạt */
+    color: white;
+    padding: 15px; /* Điều chỉnh padding để bằng kích thước nút Check essay */
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Thêm khoảng cách với phần tử bên dưới */
+}
+
+.timer:hover {
+    background-color: #0047AB; /* Màu xanh đậm khi hover */
+}
+
+
+
+.criteria-section h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+}
+.criteria-section ul {
+    list-style: none; /* Loại bỏ dấu chấm mặc định của danh sách */
+    padding-left: 0;
+}
+
+.criteria-section li::before {
+    content: "?"; /* Thêm dấu chấm tròn tùy chỉnh */
+    margin-right: 0.5rem;
+}
+/* Cần thêm thư viện Font Awesome vào trước */
+.button-icon {
+  background-color: #4CAF50; /* Màu xanh lá cây */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-icon i {
+  margin-right: 5px;
+}
+
+.search-container {
+    position: relative; /* Để định vị thanh tìm kiếm */
+}
+
+#search-bar {
+    width: 0; /* Ban đầu ẩn thanh tìm kiếm */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute; /* Định vị tuyệt đối so với .search-container */
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    transition: width 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+.search-button {
+    /* ... (kiểu dáng cho nút tìm kiếm) ... */
+    cursor: pointer;
+}
+
+#search-bar:focus {
+    width: 200px; /* Độ rộng khi được focus */
+}
+
+.icons {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử con thẳng hàng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.icon-button, .search-container {
+    /* Đặt margin cho cả .icon-button và .search-container để tạo khoảng cách giữa các nút */
+    margin: 0 10px;
+}
+
+.icon-button {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #5E61C0 /* Màu xanh đậm */
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.icon-button:hover {
+    background-color: #228B22;
+    transform: scale(1.05); /* Phóng to biểu tượng khi hover */
+}
+
+/* ... (các phần CSS khác) ... */
+
+.upload-container {
+    display: flex;
+    justify-content: center; /* Căn giữa nút */
+    margin-bottom: 20px; /* Khoảng cách với textarea */
+}
+
+.upload-button {
+    background-color: #4CAF50; /* Màu xanh lá */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-button:hover {
+    background-color: #45a049; /* Màu xanh đậm hơn khi hover */
+}
