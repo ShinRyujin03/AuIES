@@ -28,7 +28,12 @@ nav {
     flex-grow: 1; /* Cho phép nav chiếm hết không gian còn lại */
     margin: 0 auto; /* Tạo khoảng cách với logo và các biểu tượng */
 }
-
+.nav-container{
+    display: flex;
+    justify-content: space-between; /* Căn giữa các nút */
+    align-items: center;
+    margin-left: 140px; /* Căn giữa nav */
+}
 nav a {
     color: white;
     text-decoration: none;
@@ -39,10 +44,6 @@ nav a {
     transition: background-color 0.3s ease;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-nav a:hover {
-    background-color: #0047AB; /* Màu xanh đậm hơn khi hover */
 }
 
 .icons span {
