@@ -33,7 +33,7 @@ nav {
     display: flex;
     justify-content: space-between; /* Căn giữa các nút */
     align-items: center;
-    margin-left: 140px; /* Căn giữa nav */
+    margin-left: 100px; /* Căn giữa nav */
 }
 nav a {
     color: white;
@@ -45,6 +45,10 @@ nav a {
     transition: background-color 0.3s ease;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #0047AB; /* Màu xanh đậm hơn khi hover */
 }
 
 .icons span {
@@ -61,32 +65,8 @@ main {
     gap: 20px;
 }
 
-.left-column, .right-column {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.left-column {
-    flex: 2;
-}
-
-.input-box {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button { /* Get a rand question*/
+button { /* 2 nút xanh lá*/
     background-color: #4CAF50; /* Màu xanh lá cây */
     color: white;
     padding: 10px 15px;
@@ -98,71 +78,12 @@ button:hover {
     background-color: #228B22;
     transform: scale(1.05); /* Phóng to biểu tượng khi hover */
 }
-textarea {
-    width: 100%;
-    height: 200px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    font-family: sans-serif; /* Hoặc serif nếu bạn muốn font có chân */
-}
 
-.word-count {
-    text-align: right;
-    margin-top: 10px;
-}
 
 .right-column {
     flex: 1;
 }
 
-.check-essay-button {
-    background-color: #5E61C0; /* Màu xanh dương */
-    width: 100%;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-.check-essay-button:hover {
-    background-color: #0047AB; /* Màu xanh đậm hơn khi hover */
-}
-
-/* ... (các phần CSS khác) ... */
-
-.timer {
-    background-color: #5E61C0; /* Màu xanh nhạt */
-    color: white;
-    padding: 15px; /* Điều chỉnh padding để bằng kích thước nút Check essay */
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 20px; /* Thêm khoảng cách với phần tử bên dưới */
-}
-
-.timer:hover {
-    background-color: #0047AB; /* Màu xanh đậm khi hover */
-}
-
-
-
-.criteria-section h2 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-
-}
-.criteria-section ul {
-    list-style: none; /* Loại bỏ dấu chấm mặc định của danh sách */
-    padding-left: 0;
-}
-
-.criteria-section li::before {
-    content: "?"; /* Thêm dấu chấm tròn tùy chỉnh */
-    margin-right: 0.5rem;
-}
 /* Cần thêm thư viện Font Awesome vào trước */
 .button-icon {
   background-color: #4CAF50; /* Màu xanh lá cây */
@@ -227,25 +148,4 @@ textarea {
 .icon-button:hover {
     background-color: #228B22;
     transform: scale(1.05); /* Phóng to biểu tượng khi hover */
-}
-
-/* ... (các phần CSS khác) ... */
-
-.upload-container {
-    display: flex;
-    justify-content: center; /* Căn giữa nút */
-    margin-bottom: 20px; /* Khoảng cách với textarea */
-}
-
-.upload-button {
-    background-color: #4CAF50; /* Màu xanh lá */
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.upload-button:hover {
-    background-color: #45a049; /* Màu xanh đậm hơn khi hover */
 }

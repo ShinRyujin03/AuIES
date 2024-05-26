@@ -54,6 +54,7 @@ nav a {
 
 main {
     padding: 20px;
+
 }
 
 .container {
@@ -61,108 +62,24 @@ main {
     gap: 20px;
 }
 
-.left-column, .right-column {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.left-column {
-    flex: 2;
-}
-
-.input-box {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button { /* Get a rand question*/
+button { /* 2 nút xanh lá*/
     background-color: #4CAF50; /* Màu xanh lá cây */
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin: 0 5px;
 }
 button:hover {
     background-color: #228B22;
     transform: scale(1.05); /* Phóng to biểu tượng khi hover */
-}
-textarea {
-    width: 100%;
-    height: 200px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    font-family: sans-serif; /* Hoặc serif nếu bạn muốn font có chân */
-}
-
-.word-count {
-    text-align: right;
-    margin-top: 10px;
 }
 
 .right-column {
     flex: 1;
 }
 
-.check-essay-button {
-    background-color: #5E61C0; /* Màu xanh dương */
-    width: 100%;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-.check-essay-button:hover {
-    background-color: #0047AB; /* Màu xanh đậm hơn khi hover */
-}
-
-/* ... (các phần CSS khác) ... */
-
-.timer {
-    background-color: #5E61C0; /* Màu xanh nhạt */
-    color: white;
-    padding: 15px; /* Điều chỉnh padding để bằng kích thước nút Check essay */
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 20px; /* Thêm khoảng cách với phần tử bên dưới */
-}
-
-.timer:hover {
-    background-color: #0047AB; /* Màu xanh đậm khi hover */
-}
-
-
-
-.criteria-section h2 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-
-}
-.criteria-section ul {
-    list-style: none; /* Loại bỏ dấu chấm mặc định của danh sách */
-    padding-left: 0;
-}
-
-.criteria-section li::before {
-    content: "?"; /* Thêm dấu chấm tròn tùy chỉnh */
-    margin-right: 0.5rem;
-}
 /* Cần thêm thư viện Font Awesome vào trước */
 .button-icon {
   background-color: #4CAF50; /* Màu xanh lá cây */
@@ -229,23 +146,172 @@ textarea {
     transform: scale(1.05); /* Phóng to biểu tượng khi hover */
 }
 
+/* Các style trước đó */
+
+/* ... (các phần CSS khác) ... */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-content {
+    max-width: 800px; /* Giới hạn chiều rộng nội dung */
+    margin: 0 auto; /* Căn giữa nội dung */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white; /* Màu chữ trắng */
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: white; /* Màu chữ trắng */
+    margin-bottom: 30px;
+}
+
+.check-essay-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
 /* ... (các phần CSS khác) ... */
 
-.upload-container {
-    display: flex;
-    justify-content: center; /* Căn giữa nút */
-    margin-bottom: 20px; /* Khoảng cách với textarea */
+.check-section {
+    display: flex; /* Sử dụng Flexbox để sắp xếp */
+    justify-content: space-around; /* Khoảng cách giữa hai phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 50px 0;
+    width: 100%
+    background: linear-gradient(to bottom, #656DE4, #ABAFEE)
 }
 
-.upload-button {
-    background-color: #4CAF50; /* Màu xanh lá */
+.check-content {
+    flex: 1; /* Phần nội dung chiếm 1 phần */
+    padding: 20px;
     color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    text-align: left; /* Căn lề trái cho nội dung */
 }
 
-.upload-button:hover {
-    background-color: #45a049; /* Màu xanh đậm hơn khi hover */
+.check-content h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.check-image {
+    flex: 1; /* Phần ảnh chiếm 1 phần */
+    padding: 20px;
+}
+
+.check-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 12px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.reasons h2 {
+    margin-bottom: 30px;
+}
+
+
+/* Các style cho phần Why I should using AI IELTS now? */
+/* ... (các phần CSS khác) ... */
+
+.why-section {
+    padding: 50px 0;
+    text-align: center;
+}
+.why-section h2 {
+    color: white;
+}
+.reasons-container {
+    display: flex; /* Sử dụng Flexbox để sắp xếp */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-around; /* Khoảng cách giữa các phần tử */
+    flex-direction: row-reverse;
+}
+
+.reasons {
+    flex: 1; /* Phần reasons chiếm 1 phần không gian */
+    display: flex;
+    flex-direction: column; /* Sắp xếp các lý do theo chiều dọc */
+    gap: 30px; /* Khoảng cách giữa các lý do */
+}
+
+.reason {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Căn lề trái cho nội dung */
+}
+
+.reason img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.laptop-image {
+    flex: 1; /* Phần ảnh laptop chiếm 1 phần không gian */
+    padding: 20px;
+}
+
+.laptop-image img {
+    width: 100%;
+    height: 855px;
+    border: 5px solid #6A8FF9; /* Thêm viền xanh cho ảnh */
+    border-radius: 10px;
+}
+
+
+/* Các style cho phần How can I use it? */
+.how-to-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.step span {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.step img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
