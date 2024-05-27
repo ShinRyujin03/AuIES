@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check IELTS Essay with AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="nav-container">
+            <nav>
+                <a href="#">Doing Test</a>
+                <a href="#">Topic</a>
+                <a href="#">Samples</a>
+            </nav>
+        </div>
+        <div class="icons">
+            <button class="icon-button">&#36;</button>
+            <button class="icon-button">&#128100;</button>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button class="search-button">&#128269;</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="pricing">
+            <h2>Our Pricing</h2>
+            <div class="pricing-table">
+                <div class="plan free">
+                    <h3>Free</h3>
+                    <p>10 IELTS Essay Checks / 31-day</p>
+                    <p>Basic scoring</p>
+                    <p>All Sample Access</p>
+                    <p>No support</p>
+                    <h4>0 VND</h4>
+                </div>
+                <div class="plan basic">
+                    <h3>Standard</h3>
+                    <p>30 IELTS Essay Checks / 31-day</p>
+                    <p>31 days Access</p>
+                    <p>Basic scoring</p>
+                    <p>All Sample Access</p>
+                    <p>Email Support</p>
+                    <p>Priority Support: Low</p>
+                    <h4>200.000VND</h4>
+                    <button class="signup-button" data-plan="basic">Sign Up</button>
+                </div>
+                <div class="plan standard">
+                    <h3>Advance</h3>
+                    <p>100 IELTS Essay Checks / 31-day</p>
+                    <p>31 days Access</p>
+                    <p>Basic & Advanced scoring</p>
+                    <p>All Sample Access</p>
+                    <p>Email Support</p>
+                    <p>Priority Support: Medium</p>
+                    <h4>250.000VND</h4>
+                    <button class="signup-button" data-plan="standard">Sign Up</button>
+                </div>
+                <div class="plan premium">
+                    <h3>Unlimited</h3>
+                    <p>Unlimited IELTS Essay Checks / 31-day</p>
+                    <p>31 days Access</p>
+                    <p>Basic & Advance scoring</p>
+                    <p>All Sample Access</p>
+                    <p>Free access Special ebook, IELTS seminar</p>
+                    <p>Email Support</p>
+                    <p>Priority Support: High</p>
+                    <h4>350.000VND</h4>
+                    <button class="signup-button" data-plan="premium">Sign Up</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="paymentPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-button" onclick="closePopup()">&times;</span>
+                <h2>Payment Options</h2>
+                <div class="payment-tabs">
+                    <button class="tab-button active" id="atm-button" onclick="openTab('atm')">ATM QR Code</button>
+                    <button class="tab-button" id="momo-button" onclick="openTab('momo')">Momo QR Code</button>
+                    <button class="tab-button" id="visa-button" onclick="openTab('visa')">Visa</button>
+                </div>
+                <div id="atm" class="tab-content">
+                    <img src="atm_qr_code.png" alt="ATM QR Code">
+                    <p>Scan QR to payment</p>
+                    <p id="atmAmount"></p>
+                </div>
+                <div id="momo" class="tab-content">
+                    <img src="momo_qr_code.png" alt="Momo QR Code">
+                    <p>Scan QR to payment</p>
+                    <p id="momoAmount"></p>
+                </div>
+                <div id="visa" class="tab-content">
+                    <p>Need to pay: <span id="visaAmount"></span></p>
+                    <form>
+                        <input type="text" placeholder="Card Number">
+                        <input type="text" placeholder="Expiry Date">
+                        <input type="text" placeholder="CVV">
+                        <button type="submit">Pay</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="logo.png" alt="Logo" class="footer-logo">
+                <p>Automated IELTS Scoring</p>
+                <p>&copy; 2024 Writing9. All rights reserved.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="#">How does it work?</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Scholarship</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>IELTS Task 2 Topics</h3>
+                <ul>
+                    <li><a href="#">Latest Topics (May & June)</a></li>
+                    <li><a href="#">Opinion topics</a></li>
+                    <li><a href="#">Discussion topics</a></li>
+                    <li><a href="#">Problem and solution topics</a></li>
+                    <li><a href="#">Advantages and disadvantages topics</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <h3>IELTS Task 2 Samples</h3>
+                <ul>
+                    <li><a href="#">Latest Samples</a></li>
+                    <li><a href="#">Samples Band 6</a></li>
+                    <li><a href="#">Samples Band 6.5</a></li>
+                    <li><a href="#">Samples Band 7</a></li>
+                    <li><a href="#">Samples Band 7.5</a></li>
+                    <li><a href="#">Samples Band 8</a></li>
+                    <li><a href="#">Samples Band 8.5</a></li>
+                    <li><a href="#">Samples Band 9</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>DMCA Policy</h3>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
