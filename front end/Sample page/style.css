@@ -1,0 +1,279 @@
+/* style.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #656DE4, #ABAFEE, #C5C7E8);
+}
+
+header {
+    background-color: #B3B9E5; /* Màu xanh dương */
+    color: white;
+    padding: 0rem;
+    padding: 1px 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid #5E61C0;
+    position: fixed; /* Giữ cố định thanh toolbar */
+    top: 0;
+    left: 0;
+    width: 97.3%;
+    z-index: 100;
+}
+
+.logo {
+    width: auto;
+    height: 50px; /* Điều chỉnh chiều cao theo kích thước logo của bạn */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Căn giữa các nút */
+    align-items: center ;
+    flex-grow: 1; /* Cho phép nav chiếm hết không gian còn lại */
+    margin: 0 auto; /* Tạo khoảng cách với logo và các biểu tượng */
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between; /* Căn giữa các nút */
+    align-items: center;
+    margin-left: 140px; /* Căn giữa nav */
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background-color: #5E61C0; /* Màu xanh đậm */
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.icons span {
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+button { /* 2 nút xanh lá*/
+    background-color: #4CAF50; /* Màu xanh lá cây */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+button:hover {
+    background-color: #228B22;
+    transform: scale(1.05); /* Phóng to biểu tượng khi hover */
+}
+
+.right-column {
+    flex: 1;
+}
+
+/* Cần thêm thư viện Font Awesome vào trước */
+.button-icon {
+  background-color: #4CAF50; /* Màu xanh lá cây */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-icon i {
+  margin-right: 5px;
+}
+
+.search-container {
+    position: relative; /* Để định vị thanh tìm kiếm */
+}
+
+#search-bar {
+    width: 0; /* Ban đầu ẩn thanh tìm kiếm */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute; /* Định vị tuyệt đối so với .search-container */
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    transition: width 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+.search-button {
+    /* ... (kiểu dáng cho nút tìm kiếm) ... */
+    cursor: pointer;
+}
+
+#search-bar:focus {
+    width: 200px; /* Độ rộng khi được focus */
+}
+
+.icons {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử con thẳng hàng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.icon-button, .search-container {
+    /* Đặt margin cho cả .icon-button và .search-container để tạo khoảng cách giữa các nút */
+    margin: 0 10px;
+}
+
+.icon-button {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #5E61C0 /* Màu xanh đậm */
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.icon-button:hover {
+    background-color: #228B22;
+    transform: scale(1.05); /* Phóng to biểu tượng khi hover */
+}
+
+/* Các style trước đó */
+
+.topics-section {
+    padding: 50px 20px; /* Khoảng cách trên dưới và 2 bên của section */
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+.topic-tabs {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: center; /* Căn giữa các tab */
+    margin-bottom: 20px;
+}
+
+/* Các style trước đó */
+
+/* Style cho phần topics-section */
+.topics-section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.topics-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333; /* Màu xám đậm cho tiêu đề */
+}
+
+.topic-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Để các tab xuống dòng khi cần */
+}
+
+.tab-button {
+  background-color: #fff; /* Nền trắng cho tab */
+  color: #5E61C0; /* Chữ màu xanh */
+  border: 2px solid #5E61C0; /* Viền xanh */
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background-color: #5E61C0;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  text-align: left;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.sample {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.sample-band {
+  display: inline-block;
+  background-color: #5E61C0; /* Màu xanh đậm */
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px; /* Bo tròn nhiều hơn */
+  font-weight: bold;
+}
+
+.sample p {
+  margin-top: 10px; /* Khoảng cách giữa band và nội dung */
+}
+
+
+
+
+/* ... (các phần CSS khác) ... */
+
+footer {
+    background-color: #333; /* Màu nền footer */
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Khoảng cách đều giữa các cột */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa footer */
+}
+
+.footer-column {
+    width: 20%; /* Điều chỉnh độ rộng của mỗi cột */
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none; /* Loại bỏ dấu chấm của danh sách */
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-logo {
+    width: auto;
+    height: 30px;
+    margin-bottom: 10px;
+}
